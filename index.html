@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link rel="stylesheet" href="styles.css" />
+
+		<title>Interactive pricing component</title>
+	</head>
+	<body>
+		<img
+			src="./images/bg-pattern.svg"
+			alt=""
+			aria-hidden="true"
+			id="body-pattern"
+		/>
+		<header>
+			<h1 class="title">Simple, traffic-based pricing</h1>
+			<p class="description desktop">
+				Sign-up for our 30-day trial. No credit card required.
+			</p>
+			<p class="description mobile">Sign-up for our 30-day trial.</p>
+			<p class="description mobile">No credit card required.</p>
+			<img
+				src="./images/pattern-circles.svg"
+				alt=""
+				aria-hidden="true"
+				id="image-circles"
+			/>
+		</header>
+		<main>
+			<article class="desktop-top-container">
+				<h2 class="pageviews">
+					<span id="pageviews-number">100K</span> Pageviews
+				</h2>
+				<p class="price desktop">
+					<span class="price-amount">$16.00</span>
+					<span class="per-month">/month</span>
+				</p>
+			</article>
+
+			<label for="slider">
+				<input type="range" value="3" min="1" max="5" id="range" />
+			</label>
+
+			<p class="price mobile">
+				<span class="price-amount">$16.00</span>
+				<span class="per-month">/month</span>
+			</p>
+			<article class="switch-container">
+				<p class="description">Monthly Billing</p>
+				<input type="checkbox" id="switch" /><label
+					class="label-switch"
+					for="switch"
+					>Toggle</label
+				>
+				<p class="description">Yearly Billing</p>
+				<p class="discount">
+					-25% <span class="desktop">discount</span>
+				</p>
+			</article>
+			<hr />
+			<footer>
+				<article class="footer-container">
+					<div class="footer-paragraphs">
+						<img src="./images/icon-check.svg" alt="check-icon" />
+						<p class="footer-text">Unlimited websites</p>
+					</div>
+					<div class="footer-paragraphs">
+						<img src="./images/icon-check.svg" alt="check-icon" />
+						<p class="footer-text">100% data ownership</p>
+					</div>
+					<div class="footer-paragraphs">
+						<img src="./images/icon-check.svg" alt="check-icon" />
+						<p class="footer-text">Email reports</p>
+					</div>
+				</article>
+
+				<button type="button">Start my trial</button>
+			</footer>
+		</main>
+	</body>
+</html>
+
+<script src="script.js"></script>
